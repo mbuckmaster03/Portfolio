@@ -41,7 +41,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 80%;
-  transition: background-size 0.28s ease-in;
+  transition: background-size 0.22s ease-in;
 }
 
 a:hover {
