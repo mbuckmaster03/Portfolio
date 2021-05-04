@@ -18,8 +18,8 @@ body {
     display: -webkit-flex;
     display: flex;
  
-    -webkit-flex-flow:row wrap;
-    flex-flow: row wrap;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
  
  }
 
@@ -33,14 +33,14 @@ div#front_page {
 
 }
 
-img>div#front_page {
-    -webkit-flex: 1 3 220px;
-    flex: 1 3 220px; 
+img {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
 }
 
-div>div#front_page {
-    -webkit-flex: 1 8 120px;
-    flex: 1 8 120px; 
+section {
+    -webkit-flex: 18 18 auto;
+    flex: 18 18 auto; 
 }
 
 
