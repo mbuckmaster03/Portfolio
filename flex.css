@@ -23,7 +23,7 @@ body {
  
  }
 
-div#front_page { 
+#front_page { 
 
     display: -webkit-flex;
     display: flex;
@@ -33,7 +33,7 @@ div#front_page {
 
 }
 
-img {
+#front_pic {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto; 
 }

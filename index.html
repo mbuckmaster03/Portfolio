@@ -11,8 +11,10 @@
   </head>
 
   <body>
-    <header>
-      <h1 style="display:inline;">Matthew Buckmaster</h1>
+    <header class="sticky">
+      <a href="index.html"><img src="home.png" width="2%"  style=" padding: 0% 0 0 0;"></a>
+
+      <h1 style="display:inline; margin: 0 0 0 9%;">Matthew Buckmaster</h1>
       <nav>
         <ul>
           <li><a href="index.html" class="nav-line">Portfolio</a></li>
@@ -22,8 +24,8 @@
     </header>
 
     <div id="front_page">
-      <img src="code.jpeg" style=" margin: 2% 0 0 4%; border-radius: 10px;" width="45%" >
-      <div style="background-color:black; width: 50%; position: relative; border-radius: 10px;  margin: -10% 0 0 15%; color: white;">
+      <img src="code.jpeg" id="front_pic" style=" margin: 2% 0 0 4%; border-radius: 10px;" width="50%" >
+      <div id="intro">
         <section style="margin: 5% 0 6% 7%;">
           <h1 style="font-size: 30px;">Lorem ipsum dolor sit</h1>
           <p style="font-size: 19px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
@@ -35,6 +37,19 @@
     </div>
 
 
+    <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
   </body>
-
 </html>

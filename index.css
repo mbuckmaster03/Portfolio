@@ -12,20 +12,33 @@
 
 */
 
-/* Main*/
+/* =============================
+	Main
+   =============================
+*/
 body {
   font-family: monospace;
 
 }
+
+/* =============================
+	Nav Design
+   =============================
+*/
+
 header {
     
-    width: 100%;
-    height:10%;
-    margin: 0;
-    padding: 20px;
+  width: 100%;
+  height:10%;
+  margin: 0;
+  padding: 20px;
 }
 
-/* Nav Design*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 nav {
     margin-top: 0px;
@@ -66,7 +79,29 @@ a:hover {
   background-size: 100% 66%;
 }
 
-/* Body*/
+
+
+
+/* =============================
+	Home Body
+   =============================
+*/
+
+#intro {
+  background-color:black; 
+  width: 60%; 
+  position: relative; 
+  border-radius: 10px; 
+  margin: -10% 0 0 15%; 
+  color: white;
+}
+
+
+
+/* =============================
+	About Body
+   =============================
+*/
 
 
 p {
@@ -78,4 +113,26 @@ p {
 .about-bio {
   margin: 120px 0 0 200px;
 
+}
+
+
+
+/* =============================
+	Contact Design
+   =============================
+*/
+
+input {
+  display: block;
+  width: 35%;
+  height: 35px;
+  padding: 0 15px;
+  color: #000000;
+  border: 1px solid #ce4242;
+  border-radius: 5px;
+  margin-bottom: 15px
+}
+
+#contact {
+  margin: 0 0 500px 0;
 }

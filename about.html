@@ -5,13 +5,18 @@
 -->
 <html>
 
-  <head>
+  <head id="banner">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="flex.css">
   </head>
 
   <body>
-    <header>
-      <h1 style="display:inline;"> Buckmaster</h1>
+
+
+    <header class="sticky">
+      <a href="index.html"><img src="home.png" width="2%"  style=" padding: 0% 0 0 0;"></a>
+
+      <h1 style="display:inline; margin: 0 0 0 9%;">Matthew Buckmaster</h1>
       <nav>
         <ul>
           <li><a href="index.html" class="nav-line">Portfolio</a></li>
@@ -19,6 +24,8 @@
         </ul>
       </nav>
     </header>
+
+
     <div class="about-bio">
         <h1 style="font-size: 40px; margin:0 0 70px 0 ;">Lorem ipsum dolor sit </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
@@ -30,9 +37,31 @@
             sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
     <div>
-    <div>
-      <h1 style="font-size: 40px; margin:0 0 70px 0 ;">Contact</h1>
 
+      
+    <div id="contact">
+      <h1 style="font-size: 40px; margin: 15% 0 4% 0 ;">Contact</h1>
+      <form
+        action="https://formspree.io/f/mrgrejne"
+        method="POST"
+      >
+        <label>
+          Your Name:
+          <input type="text" placeholder="">
+        </label>
+        <label>
+          Your email:
+          <input type="email" name="_replyto">
+        </label>
+        <label>
+          Your message:
+          <input name="message"></textarea>
+        </label>
+
+        <!-- your other form fields go here -->
+
+        <button type="submit">Send</button>
+      </form>
 
     </div>
   </body>
