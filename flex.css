@@ -18,8 +18,8 @@ body {
     display: -webkit-flex;
     display: flex;
     
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
  
  }
 
@@ -33,11 +33,6 @@ body {
 
 }
 
-#front_pic {
-    -webkit-flex: 14 14 30;
-    flex: 14 14 30; 
-}
-
 
 
 
@@ -47,6 +42,9 @@ body {
 */
 
 @media only screen and (max-width: 480px) {
+   header.social-nav {
+      display: hidden;
+   }
 
 }
 
